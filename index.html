@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Our Pricing</h1>
+      <fieldset>
+        <label for="toggle">Annually</label>
+        <input type="checkbox" id="toggle" />
+        <label for="toggle"id="label"></label>
+        <label for="toggle">Monthly</label>
+      </fieldset>
+    </div>
+  </header>
+  <main>
+    <img src="./images/bg-top.svg" alt="" class="imgtop">
+    <img src="./images/bg-bottom.svg" alt="" class="imgbottom">
+    <div class="container">
+      <div class="cart">
+        <div class="top-cart">
+          <h4>Basic</h4>
+          <h1>&dollar;19<span>9</span>.99</h1>
+        </div>
+        <div class="content">
+          <p>500 GB Storage</p>
+          <p> 2 Users Allowed</p>
+          <p>Send up to 3 GB</p>
+        </div>
+        <a href="" class="main-btn">Learn More</a>
+      </div>
+      <div class="cart prim">
+        <div class="top-cart">
+          <h4>Professional</h4>
+          <h1>&dollar;24<span>9</span>.99</h1>
+        </div>
+        <div class="content">
+          <p>1 TB Storage</p>
+          <p>5 Users Allowed</p>
+          <p>Send up to 10 GB</p>
+        </div>
+        <a href="" class="main-btn">Learn More</a>
+      </div>
+      <div class="cart">
+        <div class="top-cart">
+          <h4>Master</h4>
+          <h1>&dollar;39<span>9</span>.99</h1>
+        </div>
+        <div class="content">
+          <p>2 TB Storage</p>
+          <p>10 Users Allowed</p>
+          <p>Send up to 20 GB</p>
+        </div>
+        <a href="" class="main-btn">Learn More</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">abdalla-osman</a>.
+    </div>
+  </footer>
+  <script>
+    const toggle=document.getElementById('toggle');
+    toggle.addEventListener('change',()=>{
+     const span= document.querySelectorAll('span')
+     span.forEach(ele =>{
+        ele.classList.toggle('active');
+      });
+    })
+  </script>
+<!-- 
+ -->
+</body>
+</html>
